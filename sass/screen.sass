@@ -30,7 +30,7 @@ form.bp
 body.two-col
   #container
     +container
-  #header, #footer
+  #header, #footer, footer
     +column($blueprint-grid-columns)
   #sidebar
     // One third of the grid columns, rounding down. With 24 cols, this is 8.
@@ -43,4 +43,15 @@ body.two-col
     // true means it's the last column in the row
     +column($content-columns, true)
 
+body
+  background: #fff url('/images/goovepaper.png') repeat-x 0px 0px
 
+h1
+  font-family: 'Belgrano', serif
+
+h2
+  font-family: 'Montserrat', sans-serif
+
+h3
+  font-family: 'Ubuntu', sans-serif
+  font-style: italic

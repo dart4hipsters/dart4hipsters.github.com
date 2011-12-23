@@ -501,14 +501,14 @@ body.two-col #container {
   *zoom: 1;
 }
 /* line 33, ../sass/screen.sass */
-body.two-col #header, body.two-col #footer {
+body.two-col #header, body.two-col #footer, body.two-col footer {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 950px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p180@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col #header, * html body.two-col #footer {
+* html body.two-col #header, * html body.two-col #footer, * html body.two-col footer {
   overflow-x: hidden;
 }
 /* line 35, ../sass/screen.sass */
@@ -532,4 +532,25 @@ body.two-col #content {
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p180@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #content {
   overflow-x: hidden;
+}
+
+/* line 46, ../sass/screen.sass */
+body {
+  background: white url("/images/goovepaper.png") repeat-x 0px 0px;
+}
+
+/* line 49, ../sass/screen.sass */
+h1 {
+  font-family: "Belgrano", serif;
+}
+
+/* line 52, ../sass/screen.sass */
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 55, ../sass/screen.sass */
+h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
 }
