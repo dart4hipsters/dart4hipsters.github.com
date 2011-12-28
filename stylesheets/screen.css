@@ -57,7 +57,7 @@ a img {
   border: none;
 }
 
-/* line 17, ../sass/screen.sass */
+/* line 19, ../sass/screen.sass */
 body.bp {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -493,14 +493,18 @@ form.bp form.inline p {
   margin-bottom: 0;
 }
 
-/* line 31, ../sass/screen.sass */
+/* line 32, ../sass/screen.sass */
+body.two-col {
+  font-size: 18px;
+}
+/* line 34, ../sass/screen.sass */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 33, ../sass/screen.sass */
+/* line 36, ../sass/screen.sass */
 body.two-col #header, body.two-col #footer, body.two-col footer {
   display: inline;
   float: left;
@@ -511,46 +515,145 @@ body.two-col #header, body.two-col #footer, body.two-col footer {
 * html body.two-col #header, * html body.two-col #footer, * html body.two-col footer {
   overflow-x: hidden;
 }
-/* line 35, ../sass/screen.sass */
-body.two-col #sidebar {
+/* line 38, ../sass/screen.sass */
+body.two-col footer {
+  margin-top: 66px;
+  font-size: 12px;
+}
+/* line 41, ../sass/screen.sass */
+body.two-col #sidebar, body.two-col .sidebar {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 310px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p180@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col #sidebar {
+* html body.two-col #sidebar, * html body.two-col .sidebar {
   overflow-x: hidden;
 }
-/* line 39, ../sass/screen.sass */
-body.two-col #content {
+/* line 45, ../sass/screen.sass */
+body.two-col #content, body.two-col .content {
   display: inline;
   float: left;
   margin-right: 0;
   width: 630px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p180@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col #content {
+* html body.two-col #content, * html body.two-col .content {
   overflow-x: hidden;
 }
-
-/* line 46, ../sass/screen.sass */
-body {
-  background: white url("/images/goovepaper.png") repeat-x 0px 0px;
-}
-
-/* line 49, ../sass/screen.sass */
-h1 {
-  font-family: "Belgrano", serif;
-}
-
 /* line 52, ../sass/screen.sass */
-h2 {
-  font-family: "Montserrat", sans-serif;
+body.two-col #signUp {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+  margin-top: 15px;
+  padding-bottom: 100px;
+  background: url("/images/dart_grey_left.png") bottom no-repeat;
 }
-
-/* line 55, ../sass/screen.sass */
-h3 {
+/* line 147, ../../../.rvm/gems/ruby-1.9.2-p180@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.two-col #signUp {
+  overflow-x: hidden;
+}
+/* line 57, ../sass/screen.sass */
+body.two-col #signUp #coverImg {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 390px;
+  padding-right: 40px;
+}
+/* line 147, ../../../.rvm/gems/ruby-1.9.2-p180@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.two-col #signUp #coverImg {
+  overflow-x: hidden;
+}
+/* line 60, ../sass/screen.sass */
+body.two-col #signUp #signUpForm {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 270px;
+  padding-right: 200px;
+  margin-top: 50px;
+}
+/* line 147, ../../../.rvm/gems/ruby-1.9.2-p180@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.two-col #signUp #signUpForm {
+  overflow-x: hidden;
+}
+/* line 65, ../sass/screen.sass */
+body.two-col #signUp #signUpForm #mc_embed_signup .button {
+  background-color: green;
+  font-size: 24px;
+  width: 10ex;
+  padding: 1px 5px;
+}
+/* line 72, ../sass/screen.sass */
+body.two-col #trustUs {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 950px;
+  margin-top: 50px;
+}
+/* line 147, ../../../.rvm/gems/ruby-1.9.2-p180@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.two-col #trustUs {
+  overflow-x: hidden;
+}
+/* line 75, ../sass/screen.sass */
+body.two-col #trustUs #otherBooksBy {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 390px;
+  padding-right: 40px;
+}
+/* line 147, ../../../.rvm/gems/ruby-1.9.2-p180@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.two-col #trustUs #otherBooksBy {
+  overflow-x: hidden;
+}
+/* line 78, ../sass/screen.sass */
+body.two-col #trustUs #iAmAnAuthor {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 510px;
+}
+/* line 147, ../../../.rvm/gems/ruby-1.9.2-p180@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.two-col #trustUs #iAmAnAuthor {
+  overflow-x: hidden;
+}
+/* line 80, ../sass/screen.sass */
+body.two-col #trustUs #iAmAnAuthor h2 {
+  color: #fe9807;
   font-family: "Ubuntu", sans-serif;
   font-style: italic;
+  font-size: 30px;
+}
+/* line 87, ../sass/screen.sass */
+body.two-col h1 {
+  font-family: "Belgrano", serif;
+  font-size: 66px;
+}
+/* line 91, ../sass/screen.sass */
+body.two-col h2 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 28px;
+  font-size: 24px;
+}
+/* line 96, ../sass/screen.sass */
+body.two-col h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  font-size: 20px;
+}
+/* line 101, ../sass/screen.sass */
+body.two-col .whoa {
+  color: #fe9807;
+  text-shadow: #666666 1px 1px 2px;
+}
+
+/* line 105, ../sass/screen.sass */
+body {
+  background: white url("/images/goovepaper.png") repeat 0px 0px;
 }

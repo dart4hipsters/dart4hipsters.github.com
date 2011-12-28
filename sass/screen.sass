@@ -7,6 +7,8 @@
 // Import the non-default scaffolding module.
 @import blueprint/scaffolding
 
+@import "compass/css3/text-shadow"
+
 // To generate css equivalent to the blueprint css but with your
 // configuration applied, uncomment:
 // @include blueprint
@@ -28,30 +30,77 @@ form.bp
 
 // Page layout can be done using mixins applied to your semantic classes and IDs:
 body.two-col
+  font-size: 18px
   #container
     +container
   #header, #footer, footer
     +column($blueprint-grid-columns)
-  #sidebar
+  footer
+    margin-top: 66px
+    font-size: 12px
+  #sidebar, .sidebar
     // One third of the grid columns, rounding down. With 24 cols, this is 8.
     $sidebar-columns: floor($blueprint-grid-columns / 3)
     +column($sidebar-columns)
-  #content
+  #content, .content
     // Two thirds of the grid columns, rounding up.
     // With 24 cols, this is 16.
     $content-columns: ceil(2 * $blueprint-grid-columns / 3)
     // true means it's the last column in the row
     +column($content-columns, true)
 
+  #signUp
+    +column($blueprint-grid-columns)
+    margin-top: 15px
+    padding-bottom: 100px
+    background: url("/images/dart_grey_left.png") bottom no-repeat
+    #coverImg
+      +column(10)
+      +append(1)
+    #signUpForm
+      +column(7, true)
+      +append(5)
+      margin-top: 50px
+      #mc_embed_signup
+        .button
+          background-color: green
+          font-size: 24px
+          width: 10ex
+          padding: 1px 5px
+
+
+  #trustUs
+    +column($blueprint-grid-columns)
+    margin-top: 50px
+    #otherBooksBy
+      +column(10)
+      +append(1)
+    #iAmAnAuthor
+      +column(13, true)
+      h2
+        color: #FE9807
+        font-family: 'Ubuntu', sans-serif
+        font-style: italic
+        font-size: 30px
+
+
+  h1
+    font-family: 'Belgrano', serif
+    font-size: 66px
+
+  h2
+    font-family: 'Montserrat', sans-serif
+    line-height: 28px
+    font-size: 24px
+
+  h3
+    font-family: 'Ubuntu', sans-serif
+    font-style: italic
+    font-size: 20px
+
+  .whoa
+    color: #FE9807
+    +single-text-shadow(#666666, 1px, 1px, 2px)
+
 body
-  background: #fff url('/images/goovepaper.png') repeat-x 0px 0px
-
-h1
-  font-family: 'Belgrano', serif
-
-h2
-  font-family: 'Montserrat', sans-serif
-
-h3
-  font-family: 'Ubuntu', sans-serif
-  font-style: italic
+  background: #fff url('/images/goovepaper.png') repeat 0px 0px
