@@ -569,6 +569,30 @@ body.two-col #signUp #coverImg, body.two-col #main #coverImg {
   overflow-x: hidden;
 }
 /* line 60, ../sass/screen.sass */
+body.two-col #signUp #plus, body.two-col #main #plus {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 30px;
+  padding-right: 40px;
+  font-size: 96px;
+}
+/* line 147, ../../../.rvm/gems/ruby-1.9.2-p290@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.two-col #signUp #plus, * html body.two-col #main #plus {
+  overflow-x: hidden;
+}
+/* line 64, ../sass/screen.sass */
+body.two-col #signUp #spdyCover, body.two-col #main #spdyCover {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 350px;
+}
+/* line 147, ../../../.rvm/gems/ruby-1.9.2-p290@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.two-col #signUp #spdyCover, * html body.two-col #main #spdyCover {
+  overflow-x: hidden;
+}
+/* line 67, ../sass/screen.sass */
 body.two-col #signUp #signUpForm, body.two-col #signUp #thanks, body.two-col #main #signUpForm, body.two-col #main #thanks {
   display: inline;
   float: left;
@@ -581,14 +605,14 @@ body.two-col #signUp #signUpForm, body.two-col #signUp #thanks, body.two-col #ma
 * html body.two-col #signUp #signUpForm, * html body.two-col #signUp #thanks, * html body.two-col #main #signUpForm, * html body.two-col #main #thanks {
   overflow-x: hidden;
 }
-/* line 66, ../sass/screen.sass */
+/* line 73, ../sass/screen.sass */
 body.two-col #signUp #signUpForm #mc_embed_signup .button, body.two-col #signUp #thanks #mc_embed_signup .button, body.two-col #main #signUpForm #mc_embed_signup .button, body.two-col #main #thanks #mc_embed_signup .button {
   background-color: green;
   font-size: 24px;
   width: 10ex;
   padding: 1px 5px;
 }
-/* line 73, ../sass/screen.sass */
+/* line 80, ../sass/screen.sass */
 body.two-col #trustUs {
   display: inline;
   float: left;
@@ -600,7 +624,7 @@ body.two-col #trustUs {
 * html body.two-col #trustUs {
   overflow-x: hidden;
 }
-/* line 76, ../sass/screen.sass */
+/* line 83, ../sass/screen.sass */
 body.two-col #trustUs #otherBooksBy {
   display: inline;
   float: left;
@@ -612,7 +636,7 @@ body.two-col #trustUs #otherBooksBy {
 * html body.two-col #trustUs #otherBooksBy {
   overflow-x: hidden;
 }
-/* line 79, ../sass/screen.sass */
+/* line 86, ../sass/screen.sass */
 body.two-col #trustUs #iAmAnAuthor {
   display: inline;
   float: left;
@@ -623,37 +647,37 @@ body.two-col #trustUs #iAmAnAuthor {
 * html body.two-col #trustUs #iAmAnAuthor {
   overflow-x: hidden;
 }
-/* line 81, ../sass/screen.sass */
+/* line 88, ../sass/screen.sass */
 body.two-col #trustUs #iAmAnAuthor h2 {
   color: #fe9807;
   font-family: "Ubuntu", sans-serif;
   font-style: italic;
   font-size: 30px;
 }
-/* line 88, ../sass/screen.sass */
+/* line 95, ../sass/screen.sass */
 body.two-col h1 {
   font-family: "Belgrano", serif;
   font-size: 66px;
 }
-/* line 92, ../sass/screen.sass */
+/* line 99, ../sass/screen.sass */
 body.two-col h2 {
   font-family: "Montserrat", sans-serif;
   line-height: 28px;
   font-size: 24px;
 }
-/* line 97, ../sass/screen.sass */
+/* line 104, ../sass/screen.sass */
 body.two-col h3 {
   font-family: "Ubuntu", sans-serif;
   font-style: italic;
   font-size: 20px;
 }
-/* line 102, ../sass/screen.sass */
+/* line 109, ../sass/screen.sass */
 body.two-col .whoa {
   color: #fe9807;
   text-shadow: #666666 1px 1px 2px;
 }
 
-/* line 106, ../sass/screen.sass */
+/* line 113, ../sass/screen.sass */
 body {
   background: white url("/images/goovepaper.png") repeat 0px 0px;
 }
