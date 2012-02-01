@@ -49,7 +49,7 @@ body.two-col
     // true means it's the last column in the row
     +column($content-columns, true)
 
-  #signUp
+  #signUp, #main
     +column($blueprint-grid-columns)
     margin-top: 15px
     padding-bottom: 100px
@@ -57,10 +57,11 @@ body.two-col
     #coverImg
       +column(10)
       +append(1)
-    #signUpForm
-      +column(7, true)
-      +append(5)
-      margin-top: 50px
+    #signUpForm, #thanks
+      +column(9, true)
+      +append(3)
+      margin-top: 5px
+
       #mc_embed_signup
         .button
           background-color: green
