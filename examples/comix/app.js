@@ -34,7 +34,15 @@ app.get('/', function(req, res){
   res.render('index', { title: 'Comix' });
 });
 
+app.post('/comics', function(req, res) {
+  var graphic_novel = req.body;
+  graphic_novel['id'] = dirtyUuid();
 
+  db.set(graphic_novel['id'], graphic_novel);
+
+  res.statusCode = 201;
+  res.send(JSON.stringify(graphic_novel));
+});
 
 
 app.listen(3000);

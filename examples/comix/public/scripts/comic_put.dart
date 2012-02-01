@@ -22,7 +22,7 @@ main() {
     print(json);
 
     var req = new XMLHttpRequest();
-    req.open('post', '/comics', true);
+    req.open('post', '/comics', false);
     req.setRequestHeader('Content-type', 'application/json');
     req.send(json);
     print(req.responseText);
