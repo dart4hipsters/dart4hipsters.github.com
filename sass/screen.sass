@@ -8,6 +8,7 @@
 @import blueprint/scaffolding
 
 @import "compass/css3/text-shadow"
+@import "compass/typography/lists/bullets"
 
 // To generate css equivalent to the blueprint css but with your
 // configuration applied, uncomment:
@@ -35,6 +36,11 @@ body.two-col
     +container
   #header, #footer, footer
     +column($blueprint-grid-columns)
+  #header
+    h1
+      a
+        text-decoration: none
+        color: black
   footer
     margin-top: 66px
     font-size: 12px
@@ -49,11 +55,9 @@ body.two-col
     // true means it's the last column in the row
     +column($content-columns, true)
 
-  #signUp, #main
+  #buyNow, #main
     +column($blueprint-grid-columns)
     margin-top: 15px
-    padding-bottom: 100px
-    background: url("/images/dart_grey_left.png") bottom no-repeat
     #coverImg
       +column(10)
       +append(1)
@@ -64,7 +68,7 @@ body.two-col
     #spdyCover
       +column(9)
 
-    #signUpForm, #thanks
+    #buyNowForm, #thanks, #toc
       +column(9, true)
       +append(3)
       margin-top: 5px
@@ -76,21 +80,33 @@ body.two-col
           width: 10ex
           padding: 1px 5px
 
+    #toc
+      ul
+        +no-bullets
+
+  #signUp
+    padding-top: 120px
+    background: url("/images/dart_grey_left.png") top no-repeat
 
   #trustUs
+    padding-top: 120px
+    background: url("/images/dart_grey_right.png") top no-repeat
+
+  #trustUs, #signUp
     +column($blueprint-grid-columns)
     margin-top: 50px
+
+    h2
+      color: #FE9807
+      font-family: 'Ubuntu', sans-serif
+      font-style: italic
+      font-size: 30px
+
     #otherBooksBy
       +column(10)
       +append(1)
     #iAmAnAuthor
       +column(13, true)
-      h2
-        color: #FE9807
-        font-family: 'Ubuntu', sans-serif
-        font-style: italic
-        font-size: 30px
-
 
   h1
     font-family: 'Belgrano', serif
@@ -106,7 +122,7 @@ body.two-col
     font-style: italic
     font-size: 20px
 
-  .whoa
+  .whoa, .slammingDeal
     color: #FE9807
     +single-text-shadow(#666666, 1px, 1px, 2px)
 

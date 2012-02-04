@@ -57,7 +57,7 @@ a img {
   border: none;
 }
 
-/* line 19, ../sass/screen.sass */
+/* line 20, ../sass/screen.sass */
 body.bp {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -493,18 +493,18 @@ form.bp form.inline p {
   margin-bottom: 0;
 }
 
-/* line 32, ../sass/screen.sass */
+/* line 33, ../sass/screen.sass */
 body.two-col {
   font-size: 18px;
 }
-/* line 34, ../sass/screen.sass */
+/* line 35, ../sass/screen.sass */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 36, ../sass/screen.sass */
+/* line 37, ../sass/screen.sass */
 body.two-col #header, body.two-col #footer, body.two-col footer {
   display: inline;
   float: left;
@@ -515,12 +515,17 @@ body.two-col #header, body.two-col #footer, body.two-col footer {
 * html body.two-col #header, * html body.two-col #footer, * html body.two-col footer {
   overflow-x: hidden;
 }
-/* line 38, ../sass/screen.sass */
+/* line 41, ../sass/screen.sass */
+body.two-col #header h1 a {
+  text-decoration: none;
+  color: black;
+}
+/* line 44, ../sass/screen.sass */
 body.two-col footer {
   margin-top: 66px;
   font-size: 12px;
 }
-/* line 41, ../sass/screen.sass */
+/* line 47, ../sass/screen.sass */
 body.two-col #sidebar, body.two-col .sidebar {
   display: inline;
   float: left;
@@ -531,7 +536,7 @@ body.two-col #sidebar, body.two-col .sidebar {
 * html body.two-col #sidebar, * html body.two-col .sidebar {
   overflow-x: hidden;
 }
-/* line 45, ../sass/screen.sass */
+/* line 51, ../sass/screen.sass */
 body.two-col #content, body.two-col .content {
   display: inline;
   float: left;
@@ -542,22 +547,20 @@ body.two-col #content, body.two-col .content {
 * html body.two-col #content, * html body.two-col .content {
   overflow-x: hidden;
 }
-/* line 52, ../sass/screen.sass */
-body.two-col #signUp, body.two-col #main {
+/* line 58, ../sass/screen.sass */
+body.two-col #buyNow, body.two-col #main {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 950px;
   margin-top: 15px;
-  padding-bottom: 100px;
-  background: url("/images/dart_grey_left.png") bottom no-repeat;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p290@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col #signUp, * html body.two-col #main {
+* html body.two-col #buyNow, * html body.two-col #main {
   overflow-x: hidden;
 }
-/* line 57, ../sass/screen.sass */
-body.two-col #signUp #coverImg, body.two-col #main #coverImg {
+/* line 61, ../sass/screen.sass */
+body.two-col #buyNow #coverImg, body.two-col #main #coverImg {
   display: inline;
   float: left;
   margin-right: 10px;
@@ -565,11 +568,11 @@ body.two-col #signUp #coverImg, body.two-col #main #coverImg {
   padding-right: 40px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p290@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col #signUp #coverImg, * html body.two-col #main #coverImg {
+* html body.two-col #buyNow #coverImg, * html body.two-col #main #coverImg {
   overflow-x: hidden;
 }
-/* line 60, ../sass/screen.sass */
-body.two-col #signUp #plus, body.two-col #main #plus {
+/* line 64, ../sass/screen.sass */
+body.two-col #buyNow #plus, body.two-col #main #plus {
   display: inline;
   float: left;
   margin-right: 10px;
@@ -578,22 +581,22 @@ body.two-col #signUp #plus, body.two-col #main #plus {
   font-size: 96px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p290@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col #signUp #plus, * html body.two-col #main #plus {
+* html body.two-col #buyNow #plus, * html body.two-col #main #plus {
   overflow-x: hidden;
 }
-/* line 64, ../sass/screen.sass */
-body.two-col #signUp #spdyCover, body.two-col #main #spdyCover {
+/* line 68, ../sass/screen.sass */
+body.two-col #buyNow #spdyCover, body.two-col #main #spdyCover {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 350px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p290@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col #signUp #spdyCover, * html body.two-col #main #spdyCover {
+* html body.two-col #buyNow #spdyCover, * html body.two-col #main #spdyCover {
   overflow-x: hidden;
 }
-/* line 67, ../sass/screen.sass */
-body.two-col #signUp #signUpForm, body.two-col #signUp #thanks, body.two-col #main #signUpForm, body.two-col #main #thanks {
+/* line 71, ../sass/screen.sass */
+body.two-col #buyNow #buyNowForm, body.two-col #buyNow #thanks, body.two-col #buyNow #toc, body.two-col #main #buyNowForm, body.two-col #main #thanks, body.two-col #main #toc {
   display: inline;
   float: left;
   margin-right: 0;
@@ -602,18 +605,38 @@ body.two-col #signUp #signUpForm, body.two-col #signUp #thanks, body.two-col #ma
   margin-top: 5px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p290@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col #signUp #signUpForm, * html body.two-col #signUp #thanks, * html body.two-col #main #signUpForm, * html body.two-col #main #thanks {
+* html body.two-col #buyNow #buyNowForm, * html body.two-col #buyNow #thanks, * html body.two-col #buyNow #toc, * html body.two-col #main #buyNowForm, * html body.two-col #main #thanks, * html body.two-col #main #toc {
   overflow-x: hidden;
 }
-/* line 73, ../sass/screen.sass */
-body.two-col #signUp #signUpForm #mc_embed_signup .button, body.two-col #signUp #thanks #mc_embed_signup .button, body.two-col #main #signUpForm #mc_embed_signup .button, body.two-col #main #thanks #mc_embed_signup .button {
+/* line 77, ../sass/screen.sass */
+body.two-col #buyNow #buyNowForm #mc_embed_signup .button, body.two-col #buyNow #thanks #mc_embed_signup .button, body.two-col #buyNow #toc #mc_embed_signup .button, body.two-col #main #buyNowForm #mc_embed_signup .button, body.two-col #main #thanks #mc_embed_signup .button, body.two-col #main #toc #mc_embed_signup .button {
   background-color: green;
   font-size: 24px;
   width: 10ex;
   padding: 1px 5px;
 }
-/* line 80, ../sass/screen.sass */
+/* line 84, ../sass/screen.sass */
+body.two-col #buyNow #toc ul, body.two-col #main #toc ul {
+  list-style: none;
+}
+/* line 11, ../../../.rvm/gems/ruby-1.9.2-p290@dart-site/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+body.two-col #buyNow #toc ul li, body.two-col #main #toc ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+}
+/* line 87, ../sass/screen.sass */
+body.two-col #signUp {
+  padding-top: 120px;
+  background: url("/images/dart_grey_left.png") top no-repeat;
+}
+/* line 91, ../sass/screen.sass */
 body.two-col #trustUs {
+  padding-top: 120px;
+  background: url("/images/dart_grey_right.png") top no-repeat;
+}
+/* line 95, ../sass/screen.sass */
+body.two-col #trustUs, body.two-col #signUp {
   display: inline;
   float: left;
   margin-right: 10px;
@@ -621,11 +644,18 @@ body.two-col #trustUs {
   margin-top: 50px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p290@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col #trustUs {
+* html body.two-col #trustUs, * html body.two-col #signUp {
   overflow-x: hidden;
 }
-/* line 83, ../sass/screen.sass */
-body.two-col #trustUs #otherBooksBy {
+/* line 99, ../sass/screen.sass */
+body.two-col #trustUs h2, body.two-col #signUp h2 {
+  color: #fe9807;
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  font-size: 30px;
+}
+/* line 105, ../sass/screen.sass */
+body.two-col #trustUs #otherBooksBy, body.two-col #signUp #otherBooksBy {
   display: inline;
   float: left;
   margin-right: 10px;
@@ -633,51 +663,44 @@ body.two-col #trustUs #otherBooksBy {
   padding-right: 40px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p290@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col #trustUs #otherBooksBy {
+* html body.two-col #trustUs #otherBooksBy, * html body.two-col #signUp #otherBooksBy {
   overflow-x: hidden;
 }
-/* line 86, ../sass/screen.sass */
-body.two-col #trustUs #iAmAnAuthor {
+/* line 108, ../sass/screen.sass */
+body.two-col #trustUs #iAmAnAuthor, body.two-col #signUp #iAmAnAuthor {
   display: inline;
   float: left;
   margin-right: 0;
   width: 510px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p290@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col #trustUs #iAmAnAuthor {
+* html body.two-col #trustUs #iAmAnAuthor, * html body.two-col #signUp #iAmAnAuthor {
   overflow-x: hidden;
 }
-/* line 88, ../sass/screen.sass */
-body.two-col #trustUs #iAmAnAuthor h2 {
-  color: #fe9807;
-  font-family: "Ubuntu", sans-serif;
-  font-style: italic;
-  font-size: 30px;
-}
-/* line 95, ../sass/screen.sass */
+/* line 111, ../sass/screen.sass */
 body.two-col h1 {
   font-family: "Belgrano", serif;
   font-size: 66px;
 }
-/* line 99, ../sass/screen.sass */
+/* line 115, ../sass/screen.sass */
 body.two-col h2 {
   font-family: "Montserrat", sans-serif;
   line-height: 28px;
   font-size: 24px;
 }
-/* line 104, ../sass/screen.sass */
+/* line 120, ../sass/screen.sass */
 body.two-col h3 {
   font-family: "Ubuntu", sans-serif;
   font-style: italic;
   font-size: 20px;
 }
-/* line 109, ../sass/screen.sass */
-body.two-col .whoa {
+/* line 125, ../sass/screen.sass */
+body.two-col .whoa, body.two-col .slammingDeal {
   color: #fe9807;
   text-shadow: #666666 1px 1px 2px;
 }
 
-/* line 113, ../sass/screen.sass */
+/* line 129, ../sass/screen.sass */
 body {
   background: white url("/images/goovepaper.png") repeat 0px 0px;
 }
