@@ -9,6 +9,7 @@
 
 @import "compass/css3/text-shadow"
 @import "compass/typography/lists/bullets"
+@import "compass/css3/border-radius"
 
 // To generate css equivalent to the blueprint css but with your
 // configuration applied, uncomment:
@@ -92,7 +93,41 @@ body.two-col
     padding-top: 120px
     background: url("/images/dart_grey_right.png") top no-repeat
 
-  #trustUs, #signUp
+  #followAlong
+    padding-top: 120px
+    background: url("/images/dart_grey_left.png") top no-repeat
+
+    .copy
+      +column(10)
+      +append(1)
+
+    #feed-content
+      +column(11)
+
+      .gfg-root
+        +border-radius(2px)
+        border-color: transparent
+        font-size: 14px
+
+        .gfg-title
+          background-color: white
+          padding: 2px 0px 2px 5px
+          +border-radius(2px)
+
+        .gfg-entry
+          display: none
+
+        .gfg-listentry-highlight
+          background-image: none !important
+
+        .gfg-listentry-odd
+          background-color: #ccc
+        .gfg-listentry-even
+          background-color: #ddd
+          +border-radius(2px)
+
+
+  #followAlong, #trustUs, #signUp
     +column($blueprint-grid-columns)
     margin-top: 50px
 

@@ -33,6 +33,57 @@ title: Dart for Hipsters
   </div>
 </div>
 
+<div id="followAlong">
+  <h2>Follow Along as the Book is Written</h2>
+  <div class="copy">Dart is a completely different kind of language. <i>Dart for Hipsters</i> is a completely different kind of book. Follow along as it is written. That's right, daily author notes are available. For free. Forever.</div>
+  <div id="feed-content"></div>
+</div>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+
+<!-- Dynamic Feed Control and Stylesheet -->
+<script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
+        type="text/javascript"></script>
+<style type="text/css">
+  @import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
+</style>
+
+<script type="text/javascript">
+/*
+*  How to use the Dynamic Feed Control, which has pretty UI already made for you!
+*  Don't forget to check out the options:
+*  http://www.google.com/uds/solutions/dynamicfeed/reference.html
+*/
+
+google.load('feeds', '1');
+
+function OnLoad() {
+     var feeds = [
+       {title: 'Recent posts...',
+        url: 'http://japhr.blogspot.com/feeds/posts/default'
+       }];
+
+  var options = {
+    stacked : false,
+    horizontal : false,
+    title : ""
+  };
+
+  new GFdynamicFeedControl(feeds, 'feed-content', options);
+}
+
+google.setOnLoadCallback(OnLoad);
+</script>
+
+<div id="trustUs">
+  <div id="otherBooksBy">
+    From the hepcat that brought you <a href="http://spdybook.com">The SPDY Book</a> and the co-author of the fabulous Backbone.js book, <a href="http://recipeswithbackbone.com">Recipes with Backbone</a>.  Learn to write code for the web without the legacy of the web. Write super fast Dart code that compiles down to super-fast Javascript.
+  </div>
+  <div id="iAmAnAuthor">
+    <h2>Trust me. I'm an author.</h2>
+  </div>
+</div>
+
 <div id="signUp">
   <h2>Keep Informed</h2>
 <!-- Begin MailChimp Signup Form -->
@@ -53,15 +104,3 @@ title: Dart for Hipsters
 <!--End mc_embed_signup-->
 
 </div>
-
-<div id="trustUs">
-  <div id="otherBooksBy">
-    From the hepcat that brought you <a href="http://spdybook.com">The SPDY Book</a> and the co-author of the fabulous Backbone.js book, <a href="http://recipeswithbackbone.com">Recipes with Backbone</a>.
-  </div>
-  <div id="iAmAnAuthor">
-    <h2>Trust me. I'm an author.</h2>
-  </div>
-</div>
-
-write code for the web without the legacy of the web.
-Learn how to write super fast Dart code that compiles down to super-fast Javascript.
