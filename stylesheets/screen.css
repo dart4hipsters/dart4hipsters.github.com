@@ -596,7 +596,18 @@ body.two-col #buyNow #spdyCover, body.two-col #main #spdyCover {
   overflow-x: hidden;
 }
 /* line 72, ../sass/screen.sass */
-body.two-col #buyNow #buyNowForm, body.two-col #buyNow #thanks, body.two-col #buyNow #toc, body.two-col #main #buyNowForm, body.two-col #main #thanks, body.two-col #main #toc {
+body.two-col #buyNow #toc, body.two-col #main #toc {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 470px;
+}
+/* line 147, ../../../.rvm/gems/ruby-1.9.2-p290@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body.two-col #buyNow #toc, * html body.two-col #main #toc {
+  overflow-x: hidden;
+}
+/* line 75, ../sass/screen.sass */
+body.two-col #buyNow #buyNowForm, body.two-col #buyNow #thanks, body.two-col #main #buyNowForm, body.two-col #main #thanks {
   display: inline;
   float: left;
   margin-right: 0;
@@ -605,17 +616,17 @@ body.two-col #buyNow #buyNowForm, body.two-col #buyNow #thanks, body.two-col #bu
   margin-top: 5px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p290@dart-site/gems/compass-0.11.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col #buyNow #buyNowForm, * html body.two-col #buyNow #thanks, * html body.two-col #buyNow #toc, * html body.two-col #main #buyNowForm, * html body.two-col #main #thanks, * html body.two-col #main #toc {
+* html body.two-col #buyNow #buyNowForm, * html body.two-col #buyNow #thanks, * html body.two-col #main #buyNowForm, * html body.two-col #main #thanks {
   overflow-x: hidden;
 }
-/* line 78, ../sass/screen.sass */
-body.two-col #buyNow #buyNowForm #mc_embed_signup .button, body.two-col #buyNow #thanks #mc_embed_signup .button, body.two-col #buyNow #toc #mc_embed_signup .button, body.two-col #main #buyNowForm #mc_embed_signup .button, body.two-col #main #thanks #mc_embed_signup .button, body.two-col #main #toc #mc_embed_signup .button {
+/* line 81, ../sass/screen.sass */
+body.two-col #buyNow #buyNowForm #mc_embed_signup .button, body.two-col #buyNow #thanks #mc_embed_signup .button, body.two-col #main #buyNowForm #mc_embed_signup .button, body.two-col #main #thanks #mc_embed_signup .button {
   background-color: green;
   font-size: 24px;
   width: 10ex;
   padding: 1px 5px;
 }
-/* line 85, ../sass/screen.sass */
+/* line 88, ../sass/screen.sass */
 body.two-col #buyNow #toc ul, body.two-col #main #toc ul {
   list-style: none;
 }
@@ -625,22 +636,22 @@ body.two-col #buyNow #toc ul li, body.two-col #main #toc ul li {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 88, ../sass/screen.sass */
+/* line 91, ../sass/screen.sass */
 body.two-col #signUp {
   padding-top: 120px;
   background: url("/images/dart_grey_left.png") top no-repeat;
 }
-/* line 92, ../sass/screen.sass */
+/* line 95, ../sass/screen.sass */
 body.two-col #trustUs {
   padding-top: 120px;
   background: url("/images/dart_grey_right.png") top no-repeat;
 }
-/* line 96, ../sass/screen.sass */
+/* line 99, ../sass/screen.sass */
 body.two-col #followAlong {
   padding-top: 120px;
   background: url("/images/dart_grey_left.png") top no-repeat;
 }
-/* line 100, ../sass/screen.sass */
+/* line 103, ../sass/screen.sass */
 body.two-col #followAlong .copy {
   display: inline;
   float: left;
@@ -652,7 +663,7 @@ body.two-col #followAlong .copy {
 * html body.two-col #followAlong .copy {
   overflow-x: hidden;
 }
-/* line 104, ../sass/screen.sass */
+/* line 107, ../sass/screen.sass */
 body.two-col #followAlong #feed-content {
   display: inline;
   float: left;
@@ -663,7 +674,7 @@ body.two-col #followAlong #feed-content {
 * html body.two-col #followAlong #feed-content {
   overflow-x: hidden;
 }
-/* line 107, ../sass/screen.sass */
+/* line 110, ../sass/screen.sass */
 body.two-col #followAlong #feed-content .gfg-root {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -674,7 +685,7 @@ body.two-col #followAlong #feed-content .gfg-root {
   border-color: transparent;
   font-size: 14px;
 }
-/* line 112, ../sass/screen.sass */
+/* line 115, ../sass/screen.sass */
 body.two-col #followAlong #feed-content .gfg-root .gfg-title {
   background-color: white;
   padding: 2px 0px 2px 5px;
@@ -685,19 +696,19 @@ body.two-col #followAlong #feed-content .gfg-root .gfg-title {
   -khtml-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 117, ../sass/screen.sass */
+/* line 120, ../sass/screen.sass */
 body.two-col #followAlong #feed-content .gfg-root .gfg-entry {
   display: none;
 }
-/* line 120, ../sass/screen.sass */
+/* line 123, ../sass/screen.sass */
 body.two-col #followAlong #feed-content .gfg-root .gfg-listentry-highlight {
   background-image: none !important;
 }
-/* line 123, ../sass/screen.sass */
+/* line 126, ../sass/screen.sass */
 body.two-col #followAlong #feed-content .gfg-root .gfg-listentry-odd {
   background-color: #cccccc;
 }
-/* line 125, ../sass/screen.sass */
+/* line 128, ../sass/screen.sass */
 body.two-col #followAlong #feed-content .gfg-root .gfg-listentry-even {
   background-color: #dddddd;
   -moz-border-radius: 2px;
@@ -707,7 +718,7 @@ body.two-col #followAlong #feed-content .gfg-root .gfg-listentry-even {
   -khtml-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 130, ../sass/screen.sass */
+/* line 133, ../sass/screen.sass */
 body.two-col #followAlong, body.two-col #trustUs, body.two-col #signUp {
   display: inline;
   float: left;
@@ -719,14 +730,14 @@ body.two-col #followAlong, body.two-col #trustUs, body.two-col #signUp {
 * html body.two-col #followAlong, * html body.two-col #trustUs, * html body.two-col #signUp {
   overflow-x: hidden;
 }
-/* line 134, ../sass/screen.sass */
+/* line 137, ../sass/screen.sass */
 body.two-col #followAlong h2, body.two-col #trustUs h2, body.two-col #signUp h2 {
   color: #fe9807;
   font-family: "Ubuntu", sans-serif;
   font-style: italic;
   font-size: 30px;
 }
-/* line 140, ../sass/screen.sass */
+/* line 143, ../sass/screen.sass */
 body.two-col #followAlong #otherBooksBy, body.two-col #trustUs #otherBooksBy, body.two-col #signUp #otherBooksBy {
   display: inline;
   float: left;
@@ -738,7 +749,7 @@ body.two-col #followAlong #otherBooksBy, body.two-col #trustUs #otherBooksBy, bo
 * html body.two-col #followAlong #otherBooksBy, * html body.two-col #trustUs #otherBooksBy, * html body.two-col #signUp #otherBooksBy {
   overflow-x: hidden;
 }
-/* line 143, ../sass/screen.sass */
+/* line 146, ../sass/screen.sass */
 body.two-col #followAlong #iAmAnAuthor, body.two-col #trustUs #iAmAnAuthor, body.two-col #signUp #iAmAnAuthor {
   display: inline;
   float: left;
@@ -749,30 +760,30 @@ body.two-col #followAlong #iAmAnAuthor, body.two-col #trustUs #iAmAnAuthor, body
 * html body.two-col #followAlong #iAmAnAuthor, * html body.two-col #trustUs #iAmAnAuthor, * html body.two-col #signUp #iAmAnAuthor {
   overflow-x: hidden;
 }
-/* line 146, ../sass/screen.sass */
+/* line 149, ../sass/screen.sass */
 body.two-col h1 {
   font-family: "Belgrano", serif;
   font-size: 66px;
 }
-/* line 150, ../sass/screen.sass */
+/* line 153, ../sass/screen.sass */
 body.two-col h2 {
   font-family: "Montserrat", sans-serif;
   line-height: 28px;
   font-size: 24px;
 }
-/* line 155, ../sass/screen.sass */
+/* line 158, ../sass/screen.sass */
 body.two-col h3 {
   font-family: "Ubuntu", sans-serif;
   font-style: italic;
   font-size: 20px;
 }
-/* line 160, ../sass/screen.sass */
+/* line 163, ../sass/screen.sass */
 body.two-col .whoa, body.two-col .slammingDeal {
   color: #fe9807;
   text-shadow: #666666 1px 1px 2px;
 }
 
-/* line 164, ../sass/screen.sass */
+/* line 167, ../sass/screen.sass */
 body {
   background: white url("/images/goovepaper.png") repeat 0px 0px;
 }
